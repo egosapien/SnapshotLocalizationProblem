@@ -13,6 +13,7 @@
 		FA1BA0AA1C771AE800AB4C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1BA0A91C771AE800AB4C08 /* Assets.xcassets */; };
 		FA1BA0AD1C771AE800AB4C08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1BA0AB1C771AE800AB4C08 /* LaunchScreen.storyboard */; };
 		FA1BA0B81C771AE900AB4C08 /* SnapshotLocalizationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BA0B71C771AE900AB4C08 /* SnapshotLocalizationUITests.swift */; };
+		FA1EC98A1C77203400BEBB3A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC9891C77203400BEBB3A /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,11 @@
 		FA1BA0B31C771AE800AB4C08 /* SnapshotLocalizationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotLocalizationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1BA0B71C771AE900AB4C08 /* SnapshotLocalizationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotLocalizationUITests.swift; sourceTree = "<group>"; };
 		FA1BA0B91C771AE900AB4C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA1EC9851C771E1B00BEBB3A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		FA1EC9861C771E1B00BEBB3A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FA1EC9871C771E2200BEBB3A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		FA1EC9881C771E2200BEBB3A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FA1EC9891C77203400BEBB3A /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,7 @@
 		FA1BA0B61C771AE900AB4C08 /* SnapshotLocalizationUITests */ = {
 			isa = PBXGroup;
 			children = (
+				FA1EC9891C77203400BEBB3A /* SnapshotHelper.swift */,
 				FA1BA0B71C771AE900AB4C08 /* SnapshotLocalizationUITests.swift */,
 				FA1BA0B91C771AE900AB4C08 /* Info.plist */,
 			);
@@ -207,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1BA0B81C771AE900AB4C08 /* SnapshotLocalizationUITests.swift in Sources */,
+				FA1EC98A1C77203400BEBB3A /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +233,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				FA1BA0A71C771AE800AB4C08 /* Base */,
+				FA1EC9851C771E1B00BEBB3A /* de */,
+				FA1EC9871C771E2200BEBB3A /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -233,6 +243,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				FA1BA0AC1C771AE800AB4C08 /* Base */,
+				FA1EC9861C771E1B00BEBB3A /* de */,
+				FA1EC9881C771E2200BEBB3A /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -388,6 +400,7 @@
 				FA1BA0BE1C771AE900AB4C08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA1BA0BF1C771AE900AB4C08 /* Build configuration list for PBXNativeTarget "SnapshotLocalizationUITests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +409,7 @@
 				FA1BA0C11C771AE900AB4C08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
