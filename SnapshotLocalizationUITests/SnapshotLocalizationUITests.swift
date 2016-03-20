@@ -27,8 +27,12 @@ class SnapshotLocalizationUITests: XCTestCase {
         let text = "Test text entry in English. Jetzt Texteingabe auf Deutsch. Sacré bleu, Omelet du Fromage"
         
         let app = XCUIApplication()
+        
         let inputTextView = app.textViews["Input"]
         inputTextView.tap()
+        
+        changeKeyboard(app)
+        
         inputTextView.typeText(text)
         snapshot("Localization0")
     }

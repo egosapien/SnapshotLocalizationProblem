@@ -1,0 +1,14 @@
+//
+//  SnapshotLocalization-Prefix.pch
+//  SnapshotLocalization
+//
+//  Created by Alexander Stonehouse on 20/03/16.
+//  Copyright © 2016 AlexanderStonehouse. All rights reserved.
+//
+
+#ifndef SnapshotLocalization_Prefix_h
+#define SnapshotLocalization_Prefix_h
+
+//#import "NSLocale+ChangeKeyboard.h"
+
+#endif /* SnapshotLocalization_Prefix_h */

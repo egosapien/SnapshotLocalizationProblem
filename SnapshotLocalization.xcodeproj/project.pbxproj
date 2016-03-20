@@ -42,6 +42,8 @@
 		FA1EC9871C771E2200BEBB3A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		FA1EC9881C771E2200BEBB3A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		FA1EC9891C77203400BEBB3A /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		FA56C8B01C9EC1D800379A02 /* SnapshotLocalization-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnapshotLocalization-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA56C8B41C9EC27400379A02 /* SnapshotLocalization-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnapshotLocalization-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				FA1BA0A11C771AE700AB4C08 /* SnapshotLocalization */,
 				FA1BA0B61C771AE900AB4C08 /* SnapshotLocalizationUITests */,
 				FA1BA0A01C771AE700AB4C08 /* Products */,
+				FA56C8B01C9EC1D800379A02 /* SnapshotLocalization-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +86,7 @@
 		FA1BA0A11C771AE700AB4C08 /* SnapshotLocalization */ = {
 			isa = PBXGroup;
 			children = (
+				FA56C8B41C9EC27400379A02 /* SnapshotLocalization-Prefix.pch */,
 				FA1BA0A21C771AE700AB4C08 /* AppDelegate.swift */,
 				FA1BA0A41C771AE700AB4C08 /* ViewController.swift */,
 				FA1BA0A61C771AE800AB4C08 /* Main.storyboard */,
@@ -339,10 +343,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = "SnapshotLocalization-Prefix.pch";
 				INFOPLIST_FILE = SnapshotLocalization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AS.SnapshotLocalization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SnapshotLocalization-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,10 +358,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SnapshotLocalization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AS.SnapshotLocalization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SnapshotLocalization-Bridging-Header.h";
 			};
 			name = Release;
 		};
